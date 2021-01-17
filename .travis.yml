@@ -10,5 +10,9 @@ script:
 deploy:
   - provider: scrip
     script: js/build.sh
+    on:
+      branch: main
   - provider: script
     script: ts/build.sh
+    on:
+      branch: main
