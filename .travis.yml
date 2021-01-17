@@ -10,6 +10,6 @@ script:
 deploy:
   - provider: scrip
     skip_cleanup: true
-    script: scripts/build.sh
+    script: ./scripts/build.sh
     on:
       branch: main
