@@ -1,0 +1,22 @@
+{
+  "name": "proto-ws-shared-structs-js",
+  "version": "0.0.1",
+  "description": "Protobuf Websocket Shared Structs - JavaScript",
+  "main": "proto-ws-structs.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Meet-Open-Source/proto-ws-shared-structs.git"
+  },
+  "keywords": [
+    "protobuf",
+    "websocket"
+  ],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Meet-Open-Source/roto-ws-shared-structs/issues"
+  },
+  "homepage": "https://github.com/Meet-Open-Source/roto-ws-shared-structs#readme",
+  "devDependencies": {},
+  "dependencies": {}
+}
