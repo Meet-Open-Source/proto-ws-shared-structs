@@ -4,7 +4,6 @@ option csharp_namespace = "ProtoWs.WsHeader.Proto";
 package io.github.protows.ws.header.proto;
 
 import "google/protobuf/any.proto";
-import "google/protobuf/empty.proto";
 
 message WsMessage {
   int32 index = 1;

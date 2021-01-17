@@ -2,8 +2,8 @@
   "name": "proto-ws-shared-structs",
   "version": "0.0.1",
   "description": "Protobuf Websocket Shared Structs",
-  "main": "index.js",
-  "types": "index.d.ts",
+  "main": "ProtoWsHeader_pb.js",
+  "types": "ProtoWsHeader_pb.d.ts",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Meet-Open-Source/proto-ws-shared-structs.git"
@@ -19,5 +19,7 @@
   },
   "homepage": "https://github.com/Meet-Open-Source/proto-ws-shared-structs#readme",
   "devDependencies": {},
-  "dependencies": {}
+  "dependencies": {
+    "ts-protoc-gen": "^0.14.0"
+  }
 }

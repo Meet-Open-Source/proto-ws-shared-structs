@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-pbjs proto/ProtoWsHeader.proto --ts js/index.d.ts --es5 js/index.js
+chmod +x ./scripts/proto-gen-js.sh && ./scripts/proto-gen-js.sh
 
 cp README.md js/README.md
 
