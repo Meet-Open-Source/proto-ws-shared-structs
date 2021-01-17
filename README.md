@@ -1,2 +1,2 @@
 # proto-ws-shared-structs
-Shared repository containing .ptoto files for all proto-ws projects.
+A shared repository containing .proto files for all proto-ws projects.
