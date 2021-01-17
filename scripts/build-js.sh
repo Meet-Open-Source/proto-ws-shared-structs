@@ -4,4 +4,4 @@ pbjs proto/ProtoWsHeader.proto --ts js/index.d.ts --es5 js/index.js
 
 cp README.md js/README.md
 
-scripts/version.sh
+chmod +x ./scripts/version.sh && ./scripts/version.sh
