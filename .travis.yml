@@ -5,11 +5,10 @@ before_script:
   - npm install -g pbjs
 script:
   - pbjs proto/ProtoWsHeader.proto --ts ts/proto-ws-structs.d.ts --es6 js/proto-ws-structs.js
-  - ls -la ts
-  - ls -la js
+  - chmod +x ./scripts/version.sh && ./scripts/version.sh
 deploy:
   - provider: scrip
     skip_cleanup: true
-    script: chmod +x ./scripts/build.sh && ./scripts/build.sh
+    script: chmod +x ./scripts/deploy-js-ts.sh && ./scripts/deploy-js-ts.sh
     on:
       branch: main
