@@ -7,3 +7,8 @@ script:
   - pbjs proto/ProtoWsHeader.proto --ts ts/proto-ws-structs.d.ts --es6 js/proto-ws-structs.js
   - ls -la ts
   - ls -la js
+deploy:
+  - provider: scrip
+    script: js/build.sh
+  - provider: script
+    script: ts/build.sh
