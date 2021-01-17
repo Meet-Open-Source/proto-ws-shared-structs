@@ -1,0 +1,41 @@
+syntax = "proto3";
+option java_multiple_files = true;
+option csharp_namespace = "ProtoWs.WsHeader.Proto";
+package io.github.protows.ws.header.proto;
+
+import "google/protobuf/any.proto";
+import "google/protobuf/empty.proto";
+
+message Message {
+  int32 index = 1;
+  string service = 2;
+  oneof message {
+    Request request = 3;
+    Response response = 4;
+    Event event = 5;
+    Error error = 6;
+  }
+}
+
+message Request {
+  string accessToken = 1;
+  map<string, string> headers = 2;
+  google.protobuf.Any payload = 3;
+}
+
+message Response {
+  string requestId = 1;
+  map<string, string> headers = 2;
+  google.protobuf.Any payload = 3;
+}
+
+message Event {
+  google.protobuf.Any payload = 1;
+}
+
+message Error {
+  string requestId = 1;
+  string message = 2;
+  int32 code = 3;
+  google.protobuf.Any payload = 4;
+}
