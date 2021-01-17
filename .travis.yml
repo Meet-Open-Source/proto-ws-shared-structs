@@ -3,6 +3,7 @@ node_js:
   - lts/*
 before_script:
   - npm install -g pbjs
+  - npm install -g pbts
 script:
   - pbjs -t static-module -w commonjs -o js/proto-ws-structs.js proto/ProtoWsHeader.proto
   - pbts -o ts/proto-ws-structs.d.ts js/proto-ws-structs.js
