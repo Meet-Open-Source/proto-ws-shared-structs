@@ -4,11 +4,10 @@ node_js:
 before_script:
   - npm install -g pbjs
 script:
-  - pbjs proto/ProtoWsHeader.proto --ts ts/proto-ws-structs.d.ts --es6 js/proto-ws-structs.js
-  - chmod +x ./scripts/version.sh && ./scripts/version.sh
+  - chmod +x ./scripts/build-js.sh && ./scripts/build-js.sh
 deploy:
   - provider: scrip
     skip_cleanup: true
-    script: chmod +x ./scripts/deploy-js-ts.sh && ./scripts/deploy-js-ts.sh
+    script: chmod +x ./scripts/deploy.sh && ./scripts/deploy.sh
     on:
       branch: main
