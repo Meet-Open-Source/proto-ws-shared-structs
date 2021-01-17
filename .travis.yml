@@ -9,10 +9,6 @@ script:
   - ls -la js
 deploy:
   - provider: scrip
-    script: js/build.sh
-    on:
-      branch: main
-  - provider: script
-    script: ts/build.sh
+    script: scripts/build.sh
     on:
       branch: main
