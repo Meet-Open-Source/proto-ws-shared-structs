@@ -9,6 +9,7 @@ script:
   - ls -la js
 deploy:
   - provider: scrip
+    skip_cleanup: true
     script: scripts/build.sh
     on:
       branch: main
